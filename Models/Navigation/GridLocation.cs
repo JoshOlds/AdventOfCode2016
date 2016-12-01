@@ -8,9 +8,7 @@ namespace Advent2016
 
         public GridLocation(int x = 0, int y = 0)
         {
-            Coordinate = new Coordinate();
-            Coordinate.X = x;
-            Coordinate.Y = y;
+            Coordinate = new Coordinate(x, y);
             Direction = new Direction();
         }
 
