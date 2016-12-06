@@ -39,7 +39,7 @@ namespace Advent2016
             Console.WriteLine("There are " + possible + " possible triangles (By Rows).");
 
 
-            for (int x = 0; x < 3; x++) //Create list in correct order
+            for (int x = 0; x < 3; x++) //loop to grab data as numbers (for columns)
             {
                 foreach (string line in inputArr)
                 {
@@ -57,8 +57,7 @@ namespace Advent2016
 
             for(int i = 0; i < columnList.Count; i += 3)
             {
-                if(Triangle.isRealTriangle(columnList[i], ))
-                possibleColumns += (col)
+                if(Triangle.isRealTriangle(columnList[i], columnList[i+1], columnList[i+2] )) possibleColumns++;  
             }
 
             Console.WriteLine("There are " + possibleColumns + " possible triangles (By columns).");
