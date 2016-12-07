@@ -15,7 +15,7 @@ namespace Advent2016
             //IExecutable program = new Day1();
             //program.execute();
 
-            IExecutable program = new Day6();
+            IExecutable program = new Day7();
             program.Execute();
         }
     }
