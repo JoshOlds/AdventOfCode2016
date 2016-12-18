@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace Advent2016
 {
@@ -85,6 +86,11 @@ namespace Advent2016
             }
             output.Add(tempString);
             return output;
+        }
+
+        public static string RemoveAllWhiteSpace(string input)
+        {
+            return Regex.Replace(input, @"\s+", "");
         }
 
     }
